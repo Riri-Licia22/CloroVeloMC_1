@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloroVelo - Server Minecraft</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Tambahkan file CSS eksternal -->
+    <script>
+        function copyIP() {
+            const ip = "velo.cloro.xyz";
+            navigator.clipboard.writeText(ip).then(() => {
+                alert("IP server telah disalin: " + ip);
+            });
+        }
+    </script>
+    <style>
+        /* Gaya Umum */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1B1B1B;
+            color: #FFFFFF;
+        }
+
+        header {
+            background-color: #2A2A2A;
+            padding: 20px 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        .ip-button {
+            background-color: #4CAF50;
+            border: none;
+            padding: 10px 20px;
+            color: #FFFFFF;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .ip-button:hover {
+            background-color: #388E3C;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #4CAF50;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #2A2A2A;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 15px 0 10px;
+            color: #FFFFFF;
+        }
+
+        .card p {
+            margin: 0 15px 15px;
+            color: #B3B3B3;
+        }
+
+        footer {
+            background-color: #2A2A2A;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CloroVelo</h1>
+            <button onclick="copyIP()" class="ip-button">Salin IP Server</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="wiki.html">Wiki</a></li>
+                    <li><a href="store.html">Store</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Selamat Datang di CloroVelo</h2>
+            <p>Server Minecraft yang menyediakan berbagai game utama dan minigames dengan kemampuan sihir untuk meningkatkan pengalaman bermain Anda.</p>
+            <img src="images/home.jpg" alt="Home Image">
+        </section>
+
+        <section id="games">
+            <h2>Games Utama & Minigames</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <img src="images/survival.jpg" alt="Survival">
+                    <h3>Survival Mini Apocalypse</h3>
+                    <p>Rasakan pengalaman bertahan hidup di dunia yang keras.</p>
+                </div>
+                <div class="card">
+                    <img src="images/skyblock.jpg" alt="Skyblock">
+                    <h3>Skyblock</h3>
+                    <p>Membangun dari keterbatasan sumber daya.</p>
+                </div>
+                <div class="card">
+                    <img src="images/oneblock.jpg" alt="Oneblock">
+                    <h3>Oneblock</h3>
+                    <p>Mulai dengan satu blok, bangun dunia Anda.</p>
+                </div>
+                <div class="card">
+                    <img src="images/acidisland.jpg" alt="Acid Island">
+                    <h3>Acid Island</h3>
+                    <p>Jelajahi pulau beracun dengan tantangan unik.</p>
+                </div>
+                <div class="card">
+                    <img src="images/parkour.jpg" alt="Parkour">
+                    <h3>Parkour</h3>
+                    <p>Tantang keahlian Anda dengan lintasan parkour yang sulit.</p>
+                </div>
+                <div class="card">
+                    <img src="images/hideandseek.jpg" alt="Hide & Seek">
+                    <h3>Hide & Seek</h3>
+                    <p>Bermain petak umpet dengan pemain lain.</p>
+                </div>
+                <div class="card">
+                    <img src="images/bedwars.jpg" alt="Bedwars">
+                    <h3>Bedwars</h3>
+                    <p>Lindungi tempat tidur Anda dan hancurkan lawan.</p>
+                </div>
+                <div class="card">
+                    <img src="images/skywars.jpg" alt="Skywars">
+                    <h3>Skywars</h3>
+                    <p>Bertarunglah di pulau melayang.</p>
+                </div>
+                <div class="card">
+                    <img src="images/boatrace.jpg" alt="BoatRace">
+                    <h3>BoatRace</h3>
+                    <p>Balapan perahu seru dengan pemain lain.</p>
+                </div>
+                <div class="card">
+                    <img src="images/buildbattle.jpg" alt="BuildBattle">
+                    <h3>BuildBattle</h3>
+                    <p>Tunjukkan kreativitas Anda dalam membangun.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="support">
+            <h2>Support</h2>
+            <p>Jika Anda mengalami kendala atau memiliki pertanyaan, kami siap membantu Anda. Hubungi kami melalui saluran berikut:</p>
+            <ul>
+                <li>Discord: <a href="#">discord.gg/clorovelo</a></li>
+                <li>Email: support@clorovelo.xyz</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CloroVelo. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>

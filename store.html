@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloroVelo Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1B1B1B;
+            color: #FFFFFF;
+        }
+
+        header {
+            background-color: #2A2A2A;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #4CAF50;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #2A2A2A;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #FFFFFF;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #B3B3B3;
+            margin-bottom: 20px;
+        }
+
+        .card a {
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: #FFFFFF;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .card a:hover {
+            background-color: #388E3C;
+        }
+
+        footer {
+            background-color: #2A2A2A;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CloroVelo Store</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="wiki.html">Wiki</a></li>
+                    <li><a href="store.html">Store</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="store">
+            <h2>Produk Kami</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <h3>Ranks</h3>
+                    <p>Tingkatkan pengalaman bermain Anda dengan rank premium.</p>
+                    <a href="#">Hubungi Kami</a>
+                </div>
+                <div class="card">
+                    <h3>Mata Uang In-Game</h3>
+                    <p>Beli mata uang untuk keperluan permainan Anda.</p>
+                    <a href="#">Hubungi Kami</a>
+                </div>
+                <div class="card">
+                    <h3>Kosmetik</h3>
+                    <p>Personalisasi karakter Anda dengan item kosmetik eksklusif.</p>
+                    <a href="#">Hubungi Kami</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CloroVelo. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
